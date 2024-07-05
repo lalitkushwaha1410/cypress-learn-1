@@ -15,7 +15,7 @@ describe('feature-1 testing',()=>{
         cy.get('[data-test="login-button"]').click();
        
         //cy.get('.app_logo').should('be.visible').debug();
-        //cy.get('.app_logo').should('be.visible');
+        cy.get('.app_logo').should('be.visible');
         cy.get('[data-test="secondary-header"]').click();
         cy.get('[data-test="title"]').should('be.visible');
         cy.get('#react-burger-menu-btn').should('be.visible');
