@@ -13,7 +13,9 @@ describe('feature-1 testing',()=>{
         cy.get('[data-test="password"]').type('secret_sauce');
         cy.get('[data-test="login-button"]').should('be.visible');
         cy.get('[data-test="login-button"]').click();
-        cy.get('.app_logo').click();
+        //cy.pause();
+       
+        //cy.get('.app_logo').should('be.visible').debug();
         cy.get('.app_logo').should('be.visible');
         cy.get('[data-test="secondary-header"]').click();
         cy.get('[data-test="title"]').should('be.visible');
