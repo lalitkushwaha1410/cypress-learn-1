@@ -8,6 +8,7 @@ module.exports = defineConfig({
     //baseUrl:'https://www.saucedemo.com/',
     video : true,
     videoCompression : 32,
+    screenshotOnRunFailure : true,
     //videosFolder : 'cypress\videos',
     setupNodeEvents(on, config) {
       // implement node event listeners here

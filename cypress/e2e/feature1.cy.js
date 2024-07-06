@@ -5,11 +5,7 @@ describe('feature-1 testing',()=>{
     it.only('TestCase-1 for feature-1', ()=>{
         /* ==== Generated with Cypress Studio ==== */
         cy.visit('/');
-        cy.get('.login_credentials_wrap-inner').click();
-        cy.get('[data-test="username"]').clear('standard_user');
         cy.get('[data-test="username"]').type('standard_user');
-        cy.get('[data-test="login-password"]').click();
-        cy.get('[data-test="password"]').clear('secret_sauce');
         cy.get('[data-test="password"]').type('secret_sauce');
         cy.get('[data-test="login-button"]').should('be.visible');
         cy.get('[data-test="login-button"]').click();
