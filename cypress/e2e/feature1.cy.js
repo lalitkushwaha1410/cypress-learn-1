@@ -4,7 +4,7 @@ describe('feature-1 testing',()=>{
 
     it.only('TestCase-1 for feature-1', ()=>{
         /* ==== Generated with Cypress Studio ==== */
-        cy.visit('https://www.saucedemo.com/');
+        cy.visit('/');
         cy.get('.login_credentials_wrap-inner').click();
         cy.get('[data-test="username"]').clear('standard_user');
         cy.get('[data-test="username"]').type('standard_user');
