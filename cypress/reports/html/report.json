@@ -1,0 +1,323 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-07-13T07:29:30.167Z",
+    "end": "2024-07-13T07:33:55.390Z",
+    "duration": 265223
+  },
+  "results": [
+    {
+      "uuid": "455f4d40-7c5f-4d76-94f0-8bc914196641",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginPage.cy.js",
+      "file": "cypress\\e2e\\loginPage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71a22999-17a1-4b43-a230-8d08113b1d98",
+          "title": "Automation demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login test scenario",
+              "fullTitle": "Automation demo Login test scenario",
+              "timedOut": null,
+              "duration": 1615,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\loginPage.cy.js\"\n}",
+              "code": "cy.visit(\"https://www.saucedemo.com/\");",
+              "err": {},
+              "uuid": "6aa1eb5c-56a7-486a-8e3d-c12f69bc89a1",
+              "parentUUID": "71a22999-17a1-4b43-a230-8d08113b1d98",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate features",
+              "fullTitle": "Automation demo validate features",
+              "timedOut": null,
+              "duration": 1210,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\loginPage.cy.js\"\n}",
+              "code": "cy.get(\"div[class='login_logo']\").should('have.text', 'Swag Labs');\n/* ==== Generated with Cypress Studio ==== */\ncy.get('[data-test=\"username\"]').clear('s');\ncy.get('[data-test=\"username\"]').type('standard_user');\ncy.get('[data-test=\"username\"]').should('have.value', 'standard_user');\ncy.get('[data-test=\"password\"]').clear('s');\ncy.get('[data-test=\"password\"]').type('secret_sauce');\ncy.get('[data-test=\"password\"]').should('have.value', 'secret_sauce');\ncy.get('[data-test=\"login-button\"]').should('be.visible');\ncy.get('[data-test=\"login-credentials\"] > h4').should('have.text', 'Accepted usernames are:');\ncy.get('[data-test=\"login-password\"] > h4').should('have.text', 'Password for all users:');\ncy.get('[data-test=\"login-button\"]').click();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "fae0ebe3-a496-4a3d-9c84-1f8e069d3e0b",
+              "parentUUID": "71a22999-17a1-4b43-a230-8d08113b1d98",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6aa1eb5c-56a7-486a-8e3d-c12f69bc89a1",
+            "fae0ebe3-a496-4a3d-9c84-1f8e069d3e0b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2825,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6b3bf1a0-69b5-43de-875f-0f634dd44b78",
+      "title": "",
+      "fullFile": "cypress\\e2e\\feature1.cy.js",
+      "file": "cypress\\e2e\\feature1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "20aba383-bc62-4629-a6ee-b87ef4fc2a17",
+          "title": "feature-1 testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TestCase-1 for feature-1",
+              "fullTitle": "feature-1 testing TestCase-1 for feature-1",
+              "timedOut": null,
+              "duration": 6712,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\feature1.cy.js\"\n}",
+              "code": "/* ==== Generated with Cypress Studio ==== */\ncy.visit('/');\ncy.get('[data-test=\"username\"]').type('standard_user');\ncy.get('[data-test=\"password\"]').type('secret_sauce');\ncy.get('[data-test=\"login-button\"]').should('be.visible');\ncy.get('[data-test=\"login-button\"]').click();\n//cy.get('.app_logo').should('be.visible').debug();\ncy.get('.app_logo').should('be.visible');\ncy.get('[data-test=\"secondary-header\"]').click();\ncy.get('[data-test=\"title\"]').should('be.visible');\ncy.get('#react-burger-menu-btn').should('be.visible');\ncy.get('#react-burger-menu-btn').click();\ncy.get('[data-test=\"inventory-sidebar-link\"]').should('have.text', 'All Items');\ncy.get('[data-test=\"about-sidebar-link\"]').should('have.text', 'About');\ncy.get('[data-test=\"logout-sidebar-link\"]').should('have.text', 'Logout');\ncy.get('[data-test=\"reset-sidebar-link\"]').should('have.text', 'Reset App State');\ncy.get('#react-burger-cross-btn').click();\ncy.get('[data-test=\"social-twitter\"]').should('be.visible');\ncy.get('[data-test=\"social-facebook\"]').should('be.visible');\ncy.get('[data-test=\"social-linkedin\"]').should('be.visible');\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "ffc4667a-64c9-4493-ac08-6086447e306d",
+              "parentUUID": "20aba383-bc62-4629-a6ee-b87ef4fc2a17",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ffc4667a-64c9-4493-ac08-6086447e306d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6712,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a0a97a3c-2d93-4667-8d28-90d9b6e87580",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginPage.cy.js",
+      "file": "cypress\\e2e\\loginPage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3b9b6a68-7f4b-4cb1-ae2e-631508e4366b",
+          "title": "Automation demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login test scenario",
+              "fullTitle": "Automation demo Login test scenario",
+              "timedOut": null,
+              "duration": 1575,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\loginPage.cy.js\"\n}",
+              "code": "cy.visit(\"https://www.saucedemo.com/\");",
+              "err": {},
+              "uuid": "9da4fde8-31ec-48a1-a535-8aba44be8566",
+              "parentUUID": "3b9b6a68-7f4b-4cb1-ae2e-631508e4366b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "validate features",
+              "fullTitle": "Automation demo validate features",
+              "timedOut": null,
+              "duration": 1234,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\loginPage.cy.js\"\n}",
+              "code": "cy.get(\"div[class='login_logo']\").should('have.text', 'Swag Labs');\n/* ==== Generated with Cypress Studio ==== */\ncy.get('[data-test=\"username\"]').clear('s');\ncy.get('[data-test=\"username\"]').type('standard_user');\ncy.get('[data-test=\"username\"]').should('have.value', 'standard_user');\ncy.get('[data-test=\"password\"]').clear('s');\ncy.get('[data-test=\"password\"]').type('secret_sauce');\ncy.get('[data-test=\"password\"]').should('have.value', 'secret_sauce');\ncy.get('[data-test=\"login-button\"]').should('be.visible');\ncy.get('[data-test=\"login-credentials\"] > h4').should('have.text', 'Accepted usernames are:');\ncy.get('[data-test=\"login-password\"] > h4').should('have.text', 'Password for all users:');\ncy.get('[data-test=\"login-button\"]').click();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "8b4e241f-9488-4a26-901b-6dc92e5c0083",
+              "parentUUID": "3b9b6a68-7f4b-4cb1-ae2e-631508e4366b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9da4fde8-31ec-48a1-a535-8aba44be8566",
+            "8b4e241f-9488-4a26-901b-6dc92e5c0083"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2809,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ef910bdf-a9cf-41fc-85ce-5c716e79cecd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\feature1.cy.js",
+      "file": "cypress\\e2e\\feature1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8558b048-cbd3-4de6-a400-a29da3b5896e",
+          "title": "feature-1 testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TestCase-1 for feature-1",
+              "fullTitle": "feature-1 testing TestCase-1 for feature-1",
+              "timedOut": null,
+              "duration": 7148,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\feature1.cy.js\"\n}",
+              "code": "/* ==== Generated with Cypress Studio ==== */\ncy.visit('/');\ncy.get('[data-test=\"username\"]').type('standard_user');\ncy.get('[data-test=\"password\"]').type('secret_sauce');\ncy.get('[data-test=\"login-button\"]').should('be.visible');\ncy.get('[data-test=\"login-button\"]').click();\n//cy.get('.app_logo').should('be.visible').debug();\ncy.get('.app_logo').should('be.visible');\ncy.get('[data-test=\"secondary-header\"]').click();\ncy.get('[data-test=\"title\"]').should('be.visible');\ncy.get('#react-burger-menu-btn').should('be.visible');\ncy.get('#react-burger-menu-btn').click();\ncy.get('[data-test=\"inventory-sidebar-link\"]').should('have.text', 'All Items');\ncy.get('[data-test=\"about-sidebar-link\"]').should('have.text', 'About');\ncy.get('[data-test=\"logout-sidebar-link\"]').should('have.text', 'Logout');\ncy.get('[data-test=\"reset-sidebar-link\"]').should('have.text', 'Reset App State');\ncy.get('#react-burger-cross-btn').click();\ncy.get('[data-test=\"social-twitter\"]').should('be.visible');\ncy.get('[data-test=\"social-facebook\"]').should('be.visible');\ncy.get('[data-test=\"social-linkedin\"]').should('be.visible');\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "f81cc18b-8509-4d34-ad0e-5e99875eb5f0",
+              "parentUUID": "8558b048-cbd3-4de6-a400-a29da3b5896e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f81cc18b-8509-4d34-ad0e-5e99875eb5f0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7148,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "Cypress-Learn-Mochawesome-Report",
+        "reportsDir": "cypress/reports/",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
