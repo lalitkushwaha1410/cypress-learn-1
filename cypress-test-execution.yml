@@ -1,0 +1,33 @@
+name: Cypress Test Execution
+
+on:
+  push:
+    branches:
+      - '*'  # Trigger on any branch
+
+jobs:
+  cypress-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress tests
+        run: yarn run cypress:test  # command from package.json to execute cypress tests
+
+      - name: Upload Cypress screenshots and videos
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-artifacts
+          path: |
+            cypress/reports/
+            cypress/videos/
