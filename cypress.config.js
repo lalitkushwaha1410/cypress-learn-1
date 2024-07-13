@@ -1,7 +1,22 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  experimentalInteractiveRunEvents: true,
+  reporter: 'cypress-multi-reporters',
+  reporterOptions: {
+    reporterEnabled: 'mochawesome',
+    mochawesomeReporterOptions: {
+      reportDir: 'cypress/reports/',
+      quite: true,
+      overwrite: false,
+      html: true,
+      json: true,
+    },
+  },
   e2e: {
+    setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on);
+    },
     experimentalStudio:true,
     projectId: "v4jctu",
     defaultCommandTimeout: 8000,

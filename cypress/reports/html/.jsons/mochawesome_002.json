@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-07-13T07:33:40.335Z",
+    "end": "2024-07-13T07:33:47.125Z",
+    "duration": 6790,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6b3bf1a0-69b5-43de-875f-0f634dd44b78",
+      "title": "",
+      "fullFile": "cypress\\e2e\\feature1.cy.js",
+      "file": "cypress\\e2e\\feature1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "20aba383-bc62-4629-a6ee-b87ef4fc2a17",
+          "title": "feature-1 testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TestCase-1 for feature-1",
+              "fullTitle": "feature-1 testing TestCase-1 for feature-1",
+              "timedOut": null,
+              "duration": 6712,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\feature1.cy.js\"\n}",
+              "code": "/* ==== Generated with Cypress Studio ==== */\ncy.visit('/');\ncy.get('[data-test=\"username\"]').type('standard_user');\ncy.get('[data-test=\"password\"]').type('secret_sauce');\ncy.get('[data-test=\"login-button\"]').should('be.visible');\ncy.get('[data-test=\"login-button\"]').click();\n//cy.get('.app_logo').should('be.visible').debug();\ncy.get('.app_logo').should('be.visible');\ncy.get('[data-test=\"secondary-header\"]').click();\ncy.get('[data-test=\"title\"]').should('be.visible');\ncy.get('#react-burger-menu-btn').should('be.visible');\ncy.get('#react-burger-menu-btn').click();\ncy.get('[data-test=\"inventory-sidebar-link\"]').should('have.text', 'All Items');\ncy.get('[data-test=\"about-sidebar-link\"]').should('have.text', 'About');\ncy.get('[data-test=\"logout-sidebar-link\"]').should('have.text', 'Logout');\ncy.get('[data-test=\"reset-sidebar-link\"]').should('have.text', 'Reset App State');\ncy.get('#react-burger-cross-btn').click();\ncy.get('[data-test=\"social-twitter\"]').should('be.visible');\ncy.get('[data-test=\"social-facebook\"]').should('be.visible');\ncy.get('[data-test=\"social-linkedin\"]').should('be.visible');\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "ffc4667a-64c9-4493-ac08-6086447e306d",
+              "parentUUID": "20aba383-bc62-4629-a6ee-b87ef4fc2a17",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ffc4667a-64c9-4493-ac08-6086447e306d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6712,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "Cypress-Learn-Mochawesome-Report",
+        "reportsDir": "cypress/reports/",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
