@@ -29,6 +29,6 @@ jobs:
         with:
           name: cypress-artifacts
           path: |
-            cypress-learn-1/cypress/reports/
-            cypress-learn-1/cypress/videos/
+            /mochawesome-report/*.html
+            cypress/videos/*.mp4
 
