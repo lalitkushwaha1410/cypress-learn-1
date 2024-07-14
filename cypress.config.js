@@ -8,9 +8,9 @@ module.exports = defineConfig({
     mochawesomeReporterOptions: {
       reportDir: 'cypress/reports/',
       quite: true,
-      overwrite: false,
+      overwrite: true,
       html: true,
-      json: true,
+      json: false,
     },
   },
   e2e: {
