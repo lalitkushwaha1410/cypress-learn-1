@@ -29,6 +29,6 @@ jobs:
         with:
           name: cypress-artifacts
           path: |
-            cypress/reports/
-            cypress/videos/
+            cypress-learn-1/cypress/reports/
+            cypress-learn-1/cypress/videos/
 
